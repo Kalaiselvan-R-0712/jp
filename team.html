@@ -1685,6 +1685,92 @@ font-size:32px;
 }
 
 }
+
+.team-stats{
+  padding:80px 0;
+  background:#f5f7f6;
+  text-align:center;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+}
+
+.stat-box{
+  background:#fff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.stat-box h2{
+  color:#0d7a5f;
+  font-size:32px;
+}
+
+.team-cta{
+  padding:80px 0;
+  text-align:center;
+  background:#0d7a5f;
+  color:#fff;
+}
+
+.why-team{
+  padding:100px 6%;
+  background:#f8fbfa;
+  text-align:center;
+}
+
+.why-team h2{
+  font-size:36px;
+  margin-bottom:50px;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.why-box{
+  background:#fff;
+  padding:35px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.why-box i{
+  font-size:30px;
+  color:#0d7a5f;
+  margin-bottom:15px;
+}
+
+.why-box h3{
+  margin-bottom:10px;
+}
+
+.why-box p{
+  color:#666;
+  font-size:14px;
+}
+
+.why-box:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+/* responsive */
+@media(max-width:768px){
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+}
+
 </style>
 </head>
 
@@ -1777,6 +1863,101 @@ Home <i class="fa fa-angle-down"></i>
 
     </div>
 
+</section>
+
+<section class="why-team">
+  <div class="container">
+    <h2>Why Choose Our Team</h2>
+
+    <div class="why-grid">
+      <div class="why-box">
+        <i class="fa-solid fa-user-tie"></i>
+        <h3>Expert Professionals</h3>
+        <p>Highly skilled team with industry experience.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Fast Hiring</h3>
+        <p>Quick and efficient hiring process.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fa-solid fa-award"></i>
+        <h3>Top Quality</h3>
+        <p>We deliver only the best talent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="testimonial-subtitle">TESTIMONIALS</div>
+  <h2 class="testimonial-title">What People Say</h2>
+
+<div class="testimonial-grid">
+
+  <!-- 1 -->
+  <div class="testimonial-card">
+    <i class="fa-solid fa-quote-left"></i>
+    <p>Stackly helped us hire candidates quickly.</p>
+    <div class="testimonial-user">
+      <img src="assets/images/member-1.webp">
+      <div>
+        <h4>John Doe</h4>
+        <span>HR Manager</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="testimonial-card">
+    <i class="fa-solid fa-quote-left"></i>
+    <p>Best hiring platform I’ve used so far.</p>
+    <div class="testimonial-user">
+      <img src="assets/images/member-3.webp">
+      <div>
+        <h4>Sarah Lee</h4>
+        <span>Recruiter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="testimonial-card">
+    <i class="fa-solid fa-quote-left"></i>
+    <p>Very smooth and fast hiring process.</p>
+    <div class="testimonial-user">
+      <img src="assets/images/member-5.webp">
+      <div>
+        <h4>David Smith</h4>
+        <span>Startup Founder</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="team-stats">
+  <div class="container stats-grid">
+    <div class="stat-box">
+      <h2>120+</h2>
+      <p>Team Members</p>
+    </div>
+    <div class="stat-box">
+      <h2>15K+</h2>
+      <p>Jobs Filled</p>
+    </div>
+    <div class="stat-box">
+      <h2>98%</h2>
+      <p>Client Satisfaction</p>
+    </div>
+    <div class="stat-box">
+      <h2>10+</h2>
+      <p>Years Experience</p>
+    </div>
+  </div>
 </section>
 
 <footer class="arch-footer">
